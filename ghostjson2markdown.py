@@ -45,10 +45,10 @@ def get_posts(db):
         author_id = get_author(db, post['author_id'])
         if post['title'].find('"') == -1:
             title = '"' + post['title'] + '"'
-            print title
+            # print title
         else:
             title = '"' + post['title'].replace("\"", "'") + '"'
-            print title
+            # print title
         slug = post['slug']
         stype = post['type']
         created = post['created_at']
